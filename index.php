@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>Arolait Global College of Health Technology | Leading Health Tech Education in Nigeria</title>
+  <meta name="title" content="Arolait Global College of Health Technology | Premier Health Technology Institution">
+  <meta name="description" content="Arolait Global College of Health Technology - NBTE approved institution offering world-class health technology programs. Study Public Health, Medical Lab Science, Nursing, and more. Apply now for 2026 admission.">
+  <meta name="keywords" content="health technology college, health tech education, public health Nigeria, medical laboratory science, nursing school, Arolait College, health courses Nigeria, NBTE approved schools, health technology programs, Ogun state university, health education">
+  <meta name="author" content="Arolait Global College of Health Technology">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <meta name="revisit-after" content="7 days">
+  <meta name="language" content="English">
+  <meta name="distribution" content="global">
+  <meta name="rating" content="General">
+  <meta name="geo.region" content="NG-OG">
+  <meta name="geo.placename" content="Owode Yewa">
+  <meta name="geo.position" content="6.9400;2.9800">
+  <meta name="ICBM" content="6.9400, 2.9800">
+  
+  <!-- Open Graph / Social Media Meta Tags (Facebook, LinkedIn, WhatsApp) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://arolait.com.ng/">
+  <meta property="og:title" content="Arolait Global College of Health Technology | Shape Your Future in Healthcare">
+  <meta property="og:description" content="Join Nigeria's premier health technology college. NBTE approved programs in Public Health, Medical Lab Science, Nursing, Pharmacy Tech & more. Enroll today!">
+  <meta property="og:image" content="https://arolait.com.ng/storage/images/1731350187.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Arolait Global College of Health Technology Campus">
+  <meta property="og:locale" content="en_NG">
+  <meta property="og:site_name" content="Arolait Global College of Health Technology">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://arolait.com.ng/">
+  <meta name="twitter:title" content="Arolait Global College of Health Technology | Premier Health Tech Institution">
+  <meta name="twitter:description" content="Study health technology at Nigeria's leading college. NBTE approved. Scholarships available. Apply for 2026 admission now.">
+  <meta name="twitter:image" content="https://arolait.com.ng/storage/images/1731350187.jpg">
+  <meta name="twitter:site" content="@arolaitcollege">
+  <meta name="twitter:creator" content="@arolaitcollege">
+  
+  <!-- Additional SEO & SEM Meta Tags -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#915F07">
+  <link rel="canonical" href="https://arolait.com.ng/">
+  <meta name="application-name" content="Arolait Global College">
+  
+  <!-- Dublin Core Metadata for SEM -->
+  <meta name="DC.title" content="Arolait Global College of Health Technology">
+  <meta name="DC.creator" content="Arolait Global College">
+  <meta name="DC.subject" content="Health Technology Education Nigeria">
+  <meta name="DC.description" content="Premier health technology institution offering NBTE approved programs in Public Health, Medical Lab Science, Nursing and more.">
+  <meta name="DC.publisher" content="Arolait Global College of Health Technology">
+  <meta name="DC.language" content="en">
+  <meta name="DC.coverage" content="Nigeria">
+  
+  <!-- Structured Data / Schema.org for Rich Results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Arolait Global College of Health Technology",
+    "alternateName": "Arolait College",
+    "url": "https://arolait.com.ng",
+    "logo": "https://arolait.com.ng/storage/images/1731350187.jpg",
+    "image": "https://arolait.com.ng/storage/images/1731349665.jpg",
+    "description": "NBTE approved health technology college offering diploma and certificate programs in Public Health, Medical Laboratory Science, Nursing, Pharmacy Technology, and Community Health.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Owode-Ilaro Road",
+      "addressLocality": "Owode Yewa",
+      "addressRegion": "Ogun State",
+      "addressCountry": "Nigeria"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+2348060906911",
+      "contactType": "admissions",
+      "email": "arolaitglobalcollege@gmail.com",
+      "availableLanguage": ["English"]
+    },
+    "sameAs": [
+      "https://www.facebook.com/arolaitcollege",
+      "https://www.instagram.com/arolaitcollege",
+      "https://twitter.com/arolaitcollege"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Health Technology Programs",
+      "itemListElement": [
+        {
+          "@type": "Course",
+          "name": "Public Health Technology",
+          "description": "Comprehensive public health training for community health leadership"
+        },
+        {
+          "@type": "Course",
+          "name": "Medical Laboratory Science",
+          "description": "Hands-on diagnostic laboratory training"
+        },
+        {
+          "@type": "Course",
+          "name": "Pharmacy Technology",
+          "description": "Pharmaceutical care and medication management"
+        }
+      ]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "bestRating": "5",
+      "ratingCount": "127"
+    }
+  }
+  </script>
+  
+  <!-- Local Business Schema for better local SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Arolait Global College of Health Technology",
+    "image": "https://arolait.com.ng/storage/images/1731350187.jpg",
+    "priceRange": "₦",
+    "telephone": "+2348060906911",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Owode-Ilaro Road",
+      "addressLocality": "Owode Yewa",
+      "addressRegion": "Ogun State",
+      "postalCode": "112104",
+      "addressCountry": "NG"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "17:00"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "6.9400",
+      "longitude": "2.9800"
+    }
+  }
+  </script>
+  
+  <!-- Google / Yahoo Verification (placeholder - add your actual verification codes) -->
+  <meta name="google-site-verification" content="your-google-verification-code">
+  <meta name="yandex-verification" content="your-yandex-verification-code">
+  
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #1e2a3a;
+      scroll-behavior: smooth;
+      line-height: 1.5;
+    }
+
+    :root {
+      --primary: #915F07;
+      --primary-dark: #6e4505;
+      --secondary: #FFC333;
+      --secondary-light: #ffe2a4;
+      --dark: #0E0F10;
+      --gray-bg: #f9fafb;
+      --shadow-sm: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+      --shadow-md: 0 20px 25px -12px rgba(0, 0, 0, 0.08);
+      --transition: all 0.3s ease;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-sm {
+      padding: 60px 0;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 28px;
+      border-radius: 40px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: var(--transition);
+      border: none;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 4px 8px rgba(145, 95, 7, 0.2);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(145, 95, 7, 0.25);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+    }
+
+    .btn-outline:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+      color: #1f2937;
+    }
+
+    .section-sub {
+      color: #4b5563;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* top bar */
+    .top-bar {
+      background: #fef7e6;
+      padding: 8px 0;
+      font-size: 0.85rem;
+      border-bottom: 1px solid #f0e5d2;
+    }
+
+    .top-bar .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .contact-info a {
+      text-decoration: none;
+      color: #2c3e2f;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+    }
+
+    .social-icons a {
+      color: #5b3c1a;
+      margin-left: 18px;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+
+    .social-icons a:hover {
+      color: var(--primary);
+    }
+
+    .login-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .login-links a {
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--primary);
+      font-size: 0.85rem;
+    }
+
+    /* navbar */
+    .navbar {
+      background: white;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03), 0 1px 6px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 12px 0;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      height: 70px;
+      object-fit: contain;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #1f2d3a;
+      transition: 0.2s;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover, .nav-links a.active {
+      color: var(--primary);
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--primary);
+    }
+
+    /* hero */
+    .hero {
+      background: linear-gradient(105deg, #fef9ef 0%, #fff6e8 100%);
+      padding: 70px 0 90px;
+    }
+
+    .hero-grid {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .hero-content {
+      flex: 1.2;
+    }
+
+    .hero-content h1 {
+      font-size: 3.2rem;
+      font-weight: 800;
+      line-height: 1.2;
+      background: linear-gradient(135deg, #7a4b04, #b87a1a);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 1.1rem;
+      color: #2d3e4b;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .hero-card {
+      flex: 0.9;
+      background: white;
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid rgba(255,195,51,0.2);
+    }
+
+    .hero-card img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .testimonial-text {
+      font-style: italic;
+      margin: 15px 0;
+      color: #2c3e2f;
+      font-weight: 500;
+    }
+
+    /* about */
+    .about-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .about-img {
+      flex: 1;
+    }
+
+    .about-img img {
+      width: 100%;
+      border-radius: 32px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .badge {
+      background: var(--secondary-light);
+      display: inline-block;
+      padding: 6px 18px;
+      border-radius: 40px;
+      font-weight: 700;
+      color: #7a4b04;
+      margin-bottom: 18px;
+    }
+
+    /* responsibility cards */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .resp-card {
+      background: white;
+      border-radius: 28px;
+      padding: 32px 20px;
+      text-align: center;
+      transition: var(--transition);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid #f3efea;
+    }
+
+    .resp-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .resp-icon {
+      font-size: 3rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    /* facilities */
+    .facilities-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .facilities-content {
+      flex: 1;
+    }
+
+    .facilities-list {
+      margin: 30px 0;
+    }
+
+    .facilities-list li {
+      margin-bottom: 24px;
+      list-style: none;
+    }
+
+    .facilities-list h4 {
+      font-weight: 700;
+      color: #1e2a3a;
+    }
+
+    .facilities-list span {
+      background: var(--secondary);
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      border-radius: 30px;
+      text-align: center;
+      line-height: 28px;
+      font-weight: bold;
+      margin-right: 12px;
+    }
+
+    .facilities-img {
+      flex: 1;
+    }
+
+    .facilities-img img {
+      width: 100%;
+      border-radius: 32px;
+    }
+
+    /* fun facts */
+    .funfact {
+      background: #1f2d2b;
+      color: white;
+      border-radius: 48px;
+      margin: 40px 0;
+    }
+
+    .funfact-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .funfact-item h3 {
+      font-size: 2.6rem;
+      font-weight: 800;
+      color: var(--secondary);
+    }
+
+    /* testimonial slider */
+    .testimonial-slider-area {
+      background: #fffcf5;
+      border-radius: 48px;
+      padding: 60px 30px;
+      margin: 40px 0;
+    }
+
+    .swiper {
+      width: 100%;
+      padding-bottom: 20px;
+    }
+
+    .testimonial-card {
+      background: white;
+      border-radius: 32px;
+      padding: 32px 28px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      margin: 10px;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .stars {
+      color: #f5b042;
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+    }
+
+    .testimonial-text-slide {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #2d3e4b;
+      margin-bottom: 24px;
+      font-style: normal;
+      font-weight: 500;
+    }
+
+    .testimonial-user {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-top: 12px;
+    }
+
+    .testimonial-user img {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--secondary);
+    }
+
+    .user-info h4 {
+      font-weight: 800;
+      margin-bottom: 4px;
+      color: #1f2937;
+    }
+
+    .user-info span {
+      font-size: 0.8rem;
+      color: #6c757d;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+      color: var(--primary);
+      background: white;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .swiper-button-prev:after, .swiper-button-next:after {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .swiper-pagination-bullet-active {
+      background: var(--primary);
+    }
+
+    /* partner logos */
+    .partner-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 48px;
+      align-items: center;
+      margin-top: 40px;
+    }
+
+    .partner-grid img {
+      max-height: 70px;
+      opacity: 0.7;
+      transition: 0.2s;
+    }
+
+    /* footer */
+    .footer {
+      background: #11181c;
+      color: #cdd9e6;
+      padding: 60px 0 30px;
+      margin-top: 60px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+    }
+
+    .footer a {
+      color: #e2e8f0;
+      text-decoration: none;
+    }
+
+    .footer h4 {
+      color: white;
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 40px;
+      font-size: 0.85rem;
+      border-top: 1px solid #2d3a40;
+      margin-top: 40px;
+    }
+
+    /* floating button + offcanvas */
+    .floating-btn {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      background: var(--primary);
+      border: none;
+      width: 55px;
+      height: 55px;
+      border-radius: 60px;
+      color: white;
+      font-size: 1.6rem;
+      cursor: pointer;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+      z-index: 99;
+      transition: 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .offcanvas {
+      position: fixed;
+      bottom: 0;
+      left: -100%;
+      width: 90%;
+      max-width: 400px;
+      background: white;
+      border-radius: 28px 28px 0 0;
+      transition: 0.3s ease-in-out;
+      z-index: 1000;
+      padding: 28px;
+      box-shadow: 0 -10px 30px rgba(0,0,0,0.15);
+    }
+
+    .offcanvas.open {
+      left: 0;
+    }
+
+    .offcanvas-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .close-canvas {
+      background: none;
+      border: none;
+      font-size: 1.6rem;
+      cursor: pointer;
+    }
+
+    .account-detail {
+      background: #f8f9fa;
+      padding: 16px;
+      border-radius: 20px;
+      margin-top: 12px;
+    }
+
+    /* responsiveness */
+    @media (max-width: 992px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        padding: 20px 0;
+        gap: 18px;
+      }
+      .nav-links.show {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .hero-content h1 {
+        font-size: 2.4rem;
+      }
+      .section-title {
+        font-size: 1.9rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .top-bar .container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .hero-grid {
+        flex-direction: column;
+      }
+      .hero-card {
+        width: 100%;
+      }
+      .about-grid, .facilities-grid {
+        flex-direction: column;
+      }
+      .section {
+        padding: 50px 0;
+      }
+      .funfact-item h3 {
+        font-size: 2rem;
+      }
+      .testimonial-slider-area {
+        padding: 40px 16px;
+      }
+    }
+  </style>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="container">
+    <div class="contact-info">
+      <a href="tel:08060906911"><i class="fas fa-phone-alt"></i> 08060906911</a>
+      <a href="mailto:arolaitglobalcollege@gmail.com"><i class="fas fa-envelope"></i> arolaitglobalcollege@gmail.com</a>
+    </div>
+    <div style="display: flex; gap: 20px; align-items: center;">
+      <div class="login-links">
+        <a href="login.php">Student Login</a>
+        <a href="login.php">Lecturer Login</a>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container nav-container">
+    <a href="#" class="logo"><img src="https://arolait.com.ng/storage/images/1731350187.jpg" alt="Arolait Global College of Health Technology Logo" onerror="this.src='https://placehold.co/400x120?text=AROLAIT+COLLEGE'"></a>
+    <button class="menu-toggle" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="about.php">About</a></li>
+      <li><a href="academics.php">Academics</a></li>
+      <li><a href="gallery.php">Our Gallery</a></li>
+      <li><a href="school_officials.php">School Officials</a></li>
+      <li><a href="contact.php">Contact</a></li>
+      <li><a href="admissions.php">Admission</a></li>
+      <li><a href="login.php">Student Portal</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-content">
+      <h1>Educating the Next Generation of Health Heroes and more</h1>
+      <p>Everything that I learned at Arolait Global College of Health Technology really helped put me above the competition.</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn btn-primary">Contact Us <i class="fas fa-arrow-right"></i></a>
+        <a href="#" class="btn btn-outline">Apply Now <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div style="display: flex; gap: 12px; align-items: center;">
+        <img src="https://arolait.com.ng/storage/images/1731350634.jpg" alt="Student testimonial - Olamide Ayoade">
+        <div><strong>Olamide Ayoade</strong><br><span style="font-size: 0.8rem;">Arolait College Student</span></div>
+      </div>
+      <div class="testimonial-text">“Everything that I learned at this school has really helped put me above the competition.”</div>
+      <i class="fas fa-quote-right" style="color: var(--secondary); font-size: 2rem; text-align: right; display: block;"></i>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="section">
+  <div class="container about-grid">
+    <div class="about-img">
+      <img src="https://arolait.com.ng/storage/images/1731349665.jpg" alt="Arolait College Campus and Facilities">
+    </div>
+    <div class="about-text">
+      <div class="badge">ABOUT US</div>
+      <h2 class="section-title">Shaping Health Leaders with Excellence</h2>
+      <p><strong>Our Mission:</strong> To provide a conducive environment for teaching, learning and research purpose where both staff and students can achieve desired goals. To be a world class Africa Research Center for affordable, accessible and available health services.</p>
+      <p><strong>Our Vision:</strong> To be renowned in the health sector for the pursuit of excellence, knowledge, character and service to humanity. To provide high research orientation in primary health care.</p>
+      <a href="#" class="btn btn-primary" style="margin-top: 20px;">Students' Admission <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- Responsibility Cards -->
+<section class="section-sm">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title">Our Responsibility</h2>
+      <p class="section-sub">Committed to empowering students and communities through excellence</p>
+    </div>
+    <div class="cards-grid">
+      <div class="resp-card"><div class="resp-icon"><i class="fas fa-graduation-cap"></i></div><h3>Scholarship Opportunities</h3><p>Making education accessible for deserving students.</p></div>
+      <div class="resp-card"><div class="resp-icon"><i class="fas fa-chalkboard-user"></i></div><h3>Supporting Student Success</h3><p>Mentorship and guidance for academic excellence.</p></div>
+      <div class="resp-card"><div class="resp-icon"><i class="fas fa-building"></i></div><h3>Investing in Future</h3><p>Infrastructure and faculty development.</p></div>
+      <div class="resp-card"><div class="resp-icon"><i class="fas fa-handshake"></i></div><h3>Community Connections</h3><p>Outreach programs for mutual growth.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Facilities Section -->
+<section class="section">
+  <div class="container facilities-grid">
+    <div class="facilities-content">
+      <h2 class="section-title">Our Campus Has Best Facilities For Our Students</h2>
+      <p>We are proud of our alumni network, which spans across industries. Our graduates are equipped to excel and make positive impact on society.</p>
+      <ul class="facilities-list">
+        <li><span>01</span> <h4 style="display:inline-block;">Medical Field Trips to Recognized Institutes</h4><p>Hands-on exposure to leading research.</p></li>
+        <li><span>02</span> <h4 style="display:inline-block;">Well Equipped Medical & Demonstration Lab</h4><p>State-of-the-art simulation for real-world skills.</p></li>
+      </ul>
+      <a href="#" class="btn btn-primary">Contact Us <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="facilities-img">
+      <img src="https://arolait.com.ng/storage/images/1728214908.jpg" alt="Modern Medical Laboratory Facilities at Arolait College">
+    </div>
+  </div>
+</section>
+
+<!-- Fun Facts -->
+<div class="container">
+  <div class="funfact">
+    <div class="funfact-inner">
+      <div class="funfact-item"><h3>90+</h3><p>Graduation rate above 98%</p></div>
+      <div class="funfact-item"><h3>10,000+</h3><p>Community health service hours</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- Testimonial Slider Section -->
+<section class="section-sm">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title">What our students are saying</h2>
+      <p class="section-sub">Real experiences from our health technology community</p>
+    </div>
+    <div class="testimonial-slider-area">
+      <div class="swiper testimonialSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <div class="testimonial-text-slide">“My experience at Arolait Global College of Health Technology has been nothing short of amazing. The faculty members are dedicated and knowledgeable, always providing the support I need to succeed. The hands-on approach to learning and modern facilities have truly prepared me for a successful career in health technology.”</div>
+              <div class="testimonial-user"><img src="https://arolait.com.ng/storage/images/1731347115.jpg" alt="Olamide Ayoade - Student"><div class="user-info"><h4>Olamide Ayoade</h4><span>Health Technology Student</span></div></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <div class="testimonial-text-slide">“As a student at Arolait Global College, I have gained invaluable knowledge and skills in a supportive learning environment. The institute's commitment to academic excellence and practical experience has equipped me with the tools I need to succeed.”</div>
+              <div class="testimonial-user"><img src="https://arolait.com.ng/storage/images/1731347344.jpg" alt="Adeleke Amdalat - Student"><div class="user-info"><h4>Adeleke Amdalat Hosanna</h4><span>Public Health Dept.</span></div></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <div class="testimonial-text-slide">“My experience has been transformative. The institute offers a perfect blend of rigorous academics and practical training, guided by expert faculty who are genuinely invested in our success. The supportive environment has built my confidence.”</div>
+              <div class="testimonial-user"><img src="https://arolait.com.ng/storage/images/1731349446.jpg" alt="James Deborah - Student"><div class="user-info"><h4>James Deborah</h4><span>Nursing & Midwifery</span></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Partner Logos -->
+<section class="section-sm">
+  <div class="container">
+    <div class="partner-grid">
+      <img src="https://arolait.com.ng/storage/images/1729069564.jpg" alt="Partner Institution Logo">
+      <img src="https://arolait.com.ng/storage/images/1729069588.jpg" alt="Partner Organization Logo">
+      <img src="https://arolait.com.ng/storage/images/1729069606.jpg" alt="Accreditation Partner Logo">
+      <img src="https://arolait.com.ng/storage/images/1729069627.jpg" alt="Collaboration Partner Logo">
+    </div>
+  </div>
+</section>
+
+<!-- Call to action -->
+<section class="section">
+  <div class="container">
+    <div style="background: #fef5e8; border-radius: 48px; padding: 50px 30px; display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between; align-items: center;">
+      <div><h2 class="section-title" style="margin-bottom: 0;">Are You Ready To Build Your Career Today?</h2><p style="max-width: 500px;">Our graduates are equipped with skills to excel in health sector globally.</p></div>
+      <div><a href="#" class="btn btn-primary">Student Application <i class="fas fa-arrow-right"></i></a> <a href="#" style="margin-left: 16px;" class="btn btn-outline">Contact Us Today</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <img src="https://arolait.com.ng/storage/images/1731350187.jpg" alt="Arolait Global College Logo" style="height: 70px; margin-bottom: 20px;">
+      <p>Arolait Global College of Health Technology, approved by NBTE, Ministry of Education, offers comprehensive health technology programs.</p>
+      <div class="social-icons" style="margin-top: 16px;">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div><h4>Academics</h4><ul style="list-style: none;"><li><a href="#">Faculties</a></li><li><a href="#">School Officials</a></li></ul></div>
+    <div><h4>Quick Links</h4><ul style="list-style: none;"><li><a href="#">Student Portal</a></li><li><a href="#">Check Admission</a></li><li><a href="#">Lecturer Portal</a></li><li><a href="#">How to Apply</a></li></ul></div>
+    <div><h4>Contact</h4><p><i class="fas fa-phone-alt"></i> 08060906911</p><p><i class="fas fa-envelope"></i> arolaitglobalcollege@gmail.com</p><p><i class="fas fa-map-marker-alt"></i> Owode-Ilaro Road, Owode Yewa, Ogun State.</p></div>
+  </div>
+  <div class="copyright">© 2026 Arolait Global College of Health Technology | All Rights Reserved</div>
+</footer>
+
+<!-- Floating Bank Details Button + Offcanvas -->
+<button class="floating-btn" id="bankDetailsBtn" aria-label="View School Account Information"><i class="fas fa-university"></i></button>
+<div class="offcanvas" id="bankOffcanvas">
+  <div class="offcanvas-header">
+    <h4>School Account Information</h4>
+    <button class="close-canvas" id="closeCanvasBtn" aria-label="Close">&times;</button>
+  </div>
+  <div>
+    <p><strong>Do not pay to any other accounts apart from the ones here.</strong></p>
+    <div class="account-detail">
+      <strong>Account One:</strong><br>
+      Account Number: 1024790910<br>
+      Bank: United Bank for Africa (UBA)<br>
+      Account Name: AROLAT GLOBAL COLLEGE OF HEALTH TECHNOLOGY
+    </div>
+    <div class="account-detail">
+      <strong>Account Two:</strong><br>
+      Account Number: 0272478282<br>
+      Bank: Wema<br>
+      Account Name: AROLAIT GLOBAL COLLEGE OF HEALTH TECHNOLOGY
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  // Initialize Swiper for testimonials
+  const swiper = new Swiper('.testimonialSwiper', {
+    loop: true,
+    autoplay: { delay: 5000, disableOnInteraction: false },
+    pagination: { el: '.swiper-pagination', clickable: true },
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    breakpoints: { 640: { slidesPerView: 1 }, 768: { slidesPerView: 1 }, 1024: { slidesPerView: 2, spaceBetween: 24 } },
+    spaceBetween: 24,
+  });
+
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('mobileMenuBtn');
+  const navLinksEl = document.getElementById('navLinks');
+  if(menuBtn) {
+    menuBtn.addEventListener('click', () => { navLinksEl.classList.toggle('show'); });
+  }
+
+  // Floating Offcanvas logic
+  const bankBtn = document.getElementById('bankDetailsBtn');
+  const offcanvasEl = document.getElementById('bankOffcanvas');
+  const closeCanvasBtn = document.getElementById('closeCanvasBtn');
+  function openOffcanvas() { offcanvasEl.classList.add('open'); }
+  function closeOffcanvas() { offcanvasEl.classList.remove('open'); }
+  if(bankBtn) bankBtn.addEventListener('click', openOffcanvas);
+  if(closeCanvasBtn) closeCanvasBtn.addEventListener('click', closeOffcanvas);
+  document.addEventListener('click', function(e) {
+    if(offcanvasEl.classList.contains('open') && !offcanvasEl.contains(e.target) && e.target !== bankBtn) {
+      closeOffcanvas();
+    }
+  });
+</script>
+</body>
+</html>

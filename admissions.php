@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Admissions | Arolait Global College of Health Technology</title>
+  <!-- Google Fonts & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #1e2a3a;
+      scroll-behavior: smooth;
+      line-height: 1.5;
+    }
+
+    :root {
+      --primary: #915F07;
+      --primary-dark: #6e4505;
+      --secondary: #FFC333;
+      --secondary-light: #ffe2a4;
+      --dark: #0E0F10;
+      --gray-bg: #f9fafb;
+      --shadow-sm: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+      --shadow-md: 0 20px 25px -12px rgba(0, 0, 0, 0.08);
+      --transition: all 0.3s ease;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-sm {
+      padding: 60px 0;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 28px;
+      border-radius: 40px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: var(--transition);
+      border: none;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 4px 8px rgba(145, 95, 7, 0.2);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(145, 95, 7, 0.25);
+    }
+
+    .btn-secondary {
+      background: #3a458c;
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      background: #2c3570;
+      transform: translateY(-2px);
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+      color: #1f2937;
+    }
+
+    /* top bar */
+    .top-bar {
+      background: #fef7e6;
+      padding: 8px 0;
+      font-size: 0.85rem;
+      border-bottom: 1px solid #f0e5d2;
+    }
+
+    .top-bar .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .contact-info a {
+      text-decoration: none;
+      color: #2c3e2f;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+    }
+
+    .social-icons a {
+      color: #5b3c1a;
+      margin-left: 18px;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+
+    .social-icons a:hover {
+      color: var(--primary);
+    }
+
+    .login-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .login-links a {
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--primary);
+      font-size: 0.85rem;
+    }
+
+    /* navbar */
+    .navbar {
+      background: white;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03), 0 1px 6px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 12px 0;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      height: 70px;
+      object-fit: contain;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #1f2d3a;
+      transition: 0.2s;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover, .nav-links a.active {
+      color: var(--primary);
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--primary);
+    }
+
+    /* page banner */
+    .page-banner {
+      background: linear-gradient(105deg, #fef9ef 0%, #fff6e8 100%);
+      padding: 60px 0;
+    }
+
+    .page-banner h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #143052;
+      margin-bottom: 12px;
+    }
+
+    .breadcrumb {
+      display: flex;
+      gap: 12px;
+      list-style: none;
+      color: #5b6e8c;
+    }
+
+    .breadcrumb a {
+      text-decoration: none;
+      color: var(--primary);
+    }
+
+    /* application steps */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin: 50px 0 40px;
+    }
+
+    .step-card {
+      background: white;
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      border: 1px solid #f0ede8;
+      text-align: center;
+    }
+
+    .step-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .step-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 2px solid var(--secondary-light);
+    }
+
+    .step-icon {
+      font-size: 2rem;
+      color: var(--primary);
+    }
+
+    .step-number {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #e2e8f0;
+    }
+
+    .step-card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+      color: #1f2937;
+    }
+
+    .step-card p {
+      color: #4b5563;
+      line-height: 1.6;
+    }
+
+    /* action buttons */
+    .action-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 30px 0 20px;
+    }
+
+    /* fees section */
+    .fees-section {
+      background: #fefbf5;
+      border-radius: 32px;
+      padding: 48px 32px;
+      margin-top: 40px;
+    }
+
+    .fees-title {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .fees-title h2 {
+      font-size: 1.8rem;
+      color: #1f2937;
+    }
+
+    .fees-table-wrapper {
+      overflow-x: auto;
+      border-radius: 20px;
+    }
+
+    .fees-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .fees-table th,
+    .fees-table td {
+      padding: 14px 16px;
+      text-align: left;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .fees-table th {
+      background: var(--primary);
+      color: white;
+      font-weight: 600;
+    }
+
+    .fees-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .fees-table tr:hover {
+      background: #fef9ef;
+    }
+
+    .sub-section-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin: 30px 0 20px;
+      color: #1f2937;
+      padding-left: 8px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .total-row {
+      background: var(--secondary-light);
+      font-weight: 700;
+    }
+
+    /* footer */
+    .footer {
+      background: #11181c;
+      color: #cdd9e6;
+      padding: 60px 0 30px;
+      margin-top: 60px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+    }
+
+    .footer a {
+      color: #e2e8f0;
+      text-decoration: none;
+    }
+
+    .footer h4 {
+      color: white;
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 40px;
+      font-size: 0.85rem;
+      border-top: 1px solid #2d3a40;
+      margin-top: 40px;
+    }
+
+    /* floating button + offcanvas */
+    .floating-btn {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      background: var(--primary);
+      border: none;
+      width: 55px;
+      height: 55px;
+      border-radius: 60px;
+      color: white;
+      font-size: 1.6rem;
+      cursor: pointer;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+      z-index: 99;
+      transition: 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .offcanvas {
+      position: fixed;
+      bottom: 0;
+      left: -100%;
+      width: 90%;
+      max-width: 400px;
+      background: white;
+      border-radius: 28px 28px 0 0;
+      transition: 0.3s ease-in-out;
+      z-index: 1000;
+      padding: 28px;
+      box-shadow: 0 -10px 30px rgba(0,0,0,0.15);
+    }
+
+    .offcanvas.open {
+      left: 0;
+    }
+
+    .offcanvas-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .close-canvas {
+      background: none;
+      border: none;
+      font-size: 1.6rem;
+      cursor: pointer;
+    }
+
+    .account-detail {
+      background: #f8f9fa;
+      padding: 16px;
+      border-radius: 20px;
+      margin-top: 12px;
+    }
+
+    /* responsiveness */
+    @media (max-width: 992px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        padding: 20px 0;
+        gap: 18px;
+      }
+      .nav-links.show {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .section-title {
+        font-size: 1.9rem;
+      }
+      .page-banner h1 {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .top-bar .container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .steps-grid {
+        grid-template-columns: 1fr;
+      }
+      .action-buttons {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .action-buttons .btn {
+        justify-content: center;
+      }
+      .fees-section {
+        padding: 32px 20px;
+      }
+      .fees-table th,
+      .fees-table td {
+        padding: 10px 12px;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="container">
+    <div class="contact-info">
+      <a href="tel:08060906911"><i class="fas fa-phone-alt"></i> 08060906911</a>
+      <a href="mailto:arolaitglobalcollege@gmail.com"><i class="fas fa-envelope"></i> arolaitglobalcollege@gmail.com</a>
+    </div>
+    <div style="display: flex; gap: 20px; align-items: center;">
+      <div class="login-links">
+        <a href="login.php">Student Login</a>
+        <a href="login.php">Lecturer Login</a>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container nav-container">
+    <a href="#" class="logo"><img src="https://arolait.com.ng/storage/images/1731350187.jpg" alt="Arolait Logo" onerror="this.src='https://placehold.co/400x120?text=AROLAIT+COLLEGE'"></a>
+    <button class="menu-toggle" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.php">Home</a></li>
+      <li><a href="about.php">About</a></li>
+      <li><a href="academics.php">Academics</a></li>
+      <li><a href="gallery.php">Our Gallery</a></li>
+      <li><a href="school_officials.php">School Officials</a></li>
+      <li><a href="contact.php">Contact</a></li>
+      <li><a href="#" class="active">Admission</a></li>
+      <li><a href="login.php">Student Portal</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Page Banner -->
+<section class="page-banner">
+  <div class="container">
+    <h1>How To Apply At Arolait Global College</h1>
+    <ul class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li>/</li>
+      <li>Admission</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Application Steps Section -->
+<section class="section-sm">
+  <div class="container">
+    <div class="steps-grid">
+      <!-- Step 1 -->
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-icon"><i class="fas fa-user-edit"></i></div>
+          <div class="step-number">01</div>
+        </div>
+        <h3>Enter Basic Information</h3>
+        <p>You will provide us with your personal information, academic details, and other required documents to begin your application process.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="step-number">02</div>
+        </div>
+        <h3>O'Level Sitting Details</h3>
+        <p>Secondly, you will provide us with your O'Level grades and the subjects you took in your WAEC, NECO, or NABTEB examinations.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-icon"><i class="fas fa-chalkboard"></i></div>
+          <div class="step-number">03</div>
+        </div>
+        <h3>JAMB Details (Optional)</h3>
+        <p>Finally, you may supply us with your JAMB information and the subjects you took. This step is optional for some programs.</p>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+      <button id="startApplicationBtn" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Start My Application</button>
+      <a href="#feesStructure" class="btn btn-secondary"><i class="fas fa-money-bill-wave"></i> View School Fees Structure</a>
+    </div>
+  </div>
+</section>
+
+<!-- School Fees Structure Section -->
+<section class="section-sm" id="feesStructure">
+  <div class="container">
+    <div class="fees-section">
+      <div class="fees-title">
+        <h2>Our School Fees Structure</h2>
+        <p>The fees structure below is applicable to all new students</p>
+      </div>
+
+      <div class="fees-table-wrapper">
+        <h3 style="margin-bottom: 16px; font-size: 1.3rem;">📋 TUITION &amp; FEES</h3>
+        <table class="fees-table">
+          <thead>
+            <tr><th>Fee Type</th><th>Amount (₦)</th><th>Frequency</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Application Form</td><td>15,000</td><td>Once</td></tr>
+            <tr><td>Processing Fee</td><td>20,000</td><td>Once</td></tr>
+            <tr><td>Uniform and Lab Coat</td><td>27,000</td><td>Once</td></tr>
+            <tr><td>Tuition and Acceptance Fee (Health Student)</td><td>156,000</td><td>Annual</td></tr>
+            <tr><td>Tuition and Acceptance Fee (Non-Health Student)</td><td>156,000</td><td>Annual</td></tr>
+          </tbody>
+        </table>
+
+        <h3 class="sub-section-title">📌 ADMINISTRATIVE CHARGES (Per Semester)</h3>
+        <table class="fees-table">
+          <thead>
+            <tr><th>Fee Type</th><th>Amount (₦)</th><th>Office</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Old/New Student Form</td><td>1,000</td><td>Secretary Office</td></tr>
+            <tr><td>Student Profile Update</td><td>1,000</td><td>Admission Office</td></tr>
+            <tr><td>Exam Docket</td><td>1,000</td><td>Bursar Office</td></tr>
+            <tr><td>Library Fee</td><td>5,000</td><td>Bursar Office</td></tr>
+            <tr><td>Library Card/Pass</td><td>1,000</td><td>Librarian Office</td></tr>
+            <tr><td>Developmental Fee</td><td>1,000</td><td>Director of Corporate Affair</td></tr>
+            <tr><td>Examination Fee</td><td>10,000</td><td>Exam and Record Office</td></tr>
+            <tr><td>Clinic Fee</td><td>10,000</td><td>Director of Health Office</td></tr>
+            <tr><td>Internal Practical</td><td>5,000</td><td>Bursar</td></tr>
+            <tr><td>Departmental Fee</td><td>2,000</td><td>Dean's Office</td></tr>
+            <tr><td>Welfare</td><td>3,000</td><td>Bursar Office</td></tr>
+            <tr class="total-row"><td><strong>TOTAL (Per Semester)</strong></td><td><strong>₦40,000</strong></td><td></td></tr>
+          </tbody>
+        </table>
+
+        <p style="margin-top: 24px; font-size: 0.85rem; color: #6b7280; text-align: center;">
+          <i class="fas fa-info-circle"></i> Note: Fees are subject to review by the institution. All payments should be made to the official school accounts only.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <img src="https://arolait.com.ng/storage/images/1731350187.jpg" alt="logo" style="height: 70px; margin-bottom: 20px;">
+      <p>Arolait Global College of Health Technology, approved by NBTE, Ministry of Education, offers comprehensive health technology programs.</p>
+      <div class="social-icons" style="margin-top: 16px;">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div><h4>Academics</h4><ul style="list-style: none;"><li><a href="#">Faculties</a></li><li><a href="#">School Officials</a></li></ul></div>
+    <div><h4>Quick Links</h4><ul style="list-style: none;"><li><a href="#">Student Portal</a></li><li><a href="#">Check Admission</a></li><li><a href="#">Lecturer Portal</a></li><li><a href="#">How to Apply</a></li></ul></div>
+    <div><h4>Contact</h4><p><i class="fas fa-phone-alt"></i> 08060906911</p><p><i class="fas fa-envelope"></i> arolaitglobalcollege@gmail.com</p><p><i class="fas fa-map-marker-alt"></i> Owode-Ilaro Road, Owode Yewa, Ogun State.</p></div>
+  </div>
+  <div class="copyright">© 2026 Arolait Global College of Health Technology | All Rights Reserved</div>
+</footer>
+
+<!-- Floating Bank Details Button + Offcanvas -->
+<button class="floating-btn" id="bankDetailsBtn"><i class="fas fa-university"></i></button>
+<div class="offcanvas" id="bankOffcanvas">
+  <div class="offcanvas-header">
+    <h4>School Account Information</h4>
+    <button class="close-canvas" id="closeCanvasBtn">&times;</button>
+  </div>
+  <div>
+    <p><strong>Do not pay to any other accounts apart from the ones here.</strong></p>
+    <div class="account-detail">
+      <strong>Account One:</strong><br>
+      Account Number: 1024790910<br>
+      Bank: United Bank for Africa (UBA)<br>
+      Account Name: AROLAT GLOBAL COLLEGE OF HEALTH TECHNOLOGY
+    </div>
+    <div class="account-detail">
+      <strong>Account Two:</strong><br>
+      Account Number: 0272478282<br>
+      Bank: Wema<br>
+      Account Name: AROLAIT GLOBAL COLLEGE OF HEALTH TECHNOLOGY
+    </div>
+  </div>
+</div>
+
+<script>
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('mobileMenuBtn');
+  const navLinksEl = document.getElementById('navLinks');
+  if(menuBtn) {
+    menuBtn.addEventListener('click', () => {
+      navLinksEl.classList.toggle('show');
+    });
+  }
+
+  // Floating Offcanvas logic
+  const bankBtn = document.getElementById('bankDetailsBtn');
+  const offcanvasEl = document.getElementById('bankOffcanvas');
+  const closeCanvasBtn = document.getElementById('closeCanvasBtn');
+  function openOffcanvas() { offcanvasEl.classList.add('open'); }
+  function closeOffcanvas() { offcanvasEl.classList.remove('open'); }
+  if(bankBtn) bankBtn.addEventListener('click', openOffcanvas);
+  if(closeCanvasBtn) closeCanvasBtn.addEventListener('click', closeOffcanvas);
+  document.addEventListener('click', function(e) {
+    if(offcanvasEl.classList.contains('open') && !offcanvasEl.contains(e.target) && e.target !== bankBtn) {
+      closeOffcanvas();
+    }
+  });
+
+  // Start Application Button Handler
+  const startBtn = document.getElementById('startApplicationBtn');
+  if(startBtn) {
+    startBtn.addEventListener('click', function() {
+      const originalText = startBtn.innerHTML;
+      startBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading, please wait...';
+      startBtn.disabled = true;
+      
+      setTimeout(function() {
+        // Simulate redirect to application page
+        alert('Application portal will open here. (Demo mode - redirect would happen in production)');
+        startBtn.innerHTML = originalText;
+        startBtn.disabled = false;
+        // window.location.href = '/student-application';
+      }, 1500);
+    });
+  }
+</script>
+</body>
+</html>

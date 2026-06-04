@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Contact Us | Arolait Global College of Health Technology</title>
+  <!-- Google Fonts & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #1e2a3a;
+      scroll-behavior: smooth;
+      line-height: 1.5;
+    }
+
+    :root {
+      --primary: #915F07;
+      --primary-dark: #6e4505;
+      --secondary: #FFC333;
+      --secondary-light: #ffe2a4;
+      --dark: #0E0F10;
+      --gray-bg: #f9fafb;
+      --shadow-sm: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+      --shadow-md: 0 20px 25px -12px rgba(0, 0, 0, 0.08);
+      --transition: all 0.3s ease;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-sm {
+      padding: 60px 0;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 28px;
+      border-radius: 40px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: var(--transition);
+      border: none;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 4px 8px rgba(145, 95, 7, 0.2);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(145, 95, 7, 0.25);
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+      color: #1f2937;
+    }
+
+    /* top bar */
+    .top-bar {
+      background: #fef7e6;
+      padding: 8px 0;
+      font-size: 0.85rem;
+      border-bottom: 1px solid #f0e5d2;
+    }
+
+    .top-bar .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .contact-info a {
+      text-decoration: none;
+      color: #2c3e2f;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+    }
+
+    .social-icons a {
+      color: #5b3c1a;
+      margin-left: 18px;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+
+    .social-icons a:hover {
+      color: var(--primary);
+    }
+
+    .login-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .login-links a {
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--primary);
+      font-size: 0.85rem;
+    }
+
+    /* navbar */
+    .navbar {
+      background: white;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03), 0 1px 6px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 12px 0;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      height: 70px;
+      object-fit: contain;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #1f2d3a;
+      transition: 0.2s;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover, .nav-links a.active {
+      color: var(--primary);
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--primary);
+    }
+
+    /* page banner */
+    .page-banner {
+      background: linear-gradient(105deg, #fef9ef 0%, #fff6e8 100%);
+      padding: 60px 0;
+    }
+
+    .page-banner h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: #143052;
+      margin-bottom: 12px;
+    }
+
+    .breadcrumb {
+      display: flex;
+      gap: 12px;
+      list-style: none;
+      color: #5b6e8c;
+    }
+
+    .breadcrumb a {
+      text-decoration: none;
+      color: var(--primary);
+    }
+
+    /* contact section */
+    .contact-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      margin-top: 20px;
+    }
+
+    .contact-form-box {
+      flex: 2;
+    }
+
+    .contact-form-box h2 {
+      font-size: 1.8rem;
+      margin-bottom: 24px;
+      color: #1f2937;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 14px 18px;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      transition: var(--transition);
+      background: #f9fafb;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(145, 95, 7, 0.1);
+      background: white;
+    }
+
+    .form-group textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .form-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .form-row .form-group {
+      flex: 1;
+    }
+
+    .submit-btn {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 14px 32px;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .submit-btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    /* contact info cards */
+    .contact-info-box {
+      flex: 1.2;
+    }
+
+    .info-card {
+      background: white;
+      border-radius: 24px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid #f0ede8;
+      transition: var(--transition);
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+    }
+
+    .info-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .info-icon {
+      width: 52px;
+      height: 52px;
+      background: var(--secondary-light);
+      border-radius: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      color: var(--primary);
+    }
+
+    .info-content h4 {
+      font-size: 1rem;
+      color: #6b7280;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+
+    .info-content p, .info-content a {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #1f2937;
+      text-decoration: none;
+    }
+
+    .info-content a:hover {
+      color: var(--primary);
+    }
+
+    /* map placeholder */
+    .map-section {
+      margin-top: 40px;
+    }
+
+    .map-placeholder {
+      background: #e5e7eb;
+      border-radius: 28px;
+      height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #6b7280;
+      background-image: url('https://placehold.co/1200x400/f3f4f6/9ca3af?text=Map+Location');
+      background-size: cover;
+      background-position: center;
+      border-radius: 28px;
+    }
+
+    /* footer */
+    .footer {
+      background: #11181c;
+      color: #cdd9e6;
+      padding: 60px 0 30px;
+      margin-top: 60px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+    }
+
+    .footer a {
+      color: #e2e8f0;
+      text-decoration: none;
+    }
+
+    .footer h4 {
+      color: white;
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 40px;
+      font-size: 0.85rem;
+      border-top: 1px solid #2d3a40;
+      margin-top: 40px;
+    }
+
+    /* floating button + offcanvas */
+    .floating-btn {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      background: var(--primary);
+      border: none;
+      width: 55px;
+      height: 55px;
+      border-radius: 60px;
+      color: white;
+      font-size: 1.6rem;
+      cursor: pointer;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+      z-index: 99;
+      transition: 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .offcanvas {
+      position: fixed;
+      bottom: 0;
+      left: -100%;
+      width: 90%;
+      max-width: 400px;
+      background: white;
+      border-radius: 28px 28px 0 0;
+      transition: 0.3s ease-in-out;
+      z-index: 1000;
+      padding: 28px;
+      box-shadow: 0 -10px 30px rgba(0,0,0,0.15);
+    }
+
+    .offcanvas.open {
+      left: 0;
+    }
+
+    .offcanvas-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .close-canvas {
+      background: none;
+      border: none;
+      font-size: 1.6rem;
+      cursor: pointer;
+    }
+
+    .account-detail {
+      background: #f8f9fa;
+      padding: 16px;
+      border-radius: 20px;
+      margin-top: 12px;
+    }
+
+    /* responsiveness */
+    @media (max-width: 992px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        padding: 20px 0;
+        gap: 18px;
+      }
+      .nav-links.show {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .section-title {
+        font-size: 1.9rem;
+      }
+      .page-banner h1 {
+        font-size: 2.2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .top-bar .container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .contact-grid {
+        flex-direction: column;
+      }
+      .form-row {
+        flex-direction: column;
+        gap: 0;
+      }
+      .info-card {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="container">
+    <div class="contact-info">
+      <a href="tel:08060906911"><i class="fas fa-phone-alt"></i> 08060906911</a>
+      <a href="mailto:arolaitglobalcollege@gmail.com"><i class="fas fa-envelope"></i> arolaitglobalcollege@gmail.com</a>
+    </div>
+    <div style="display: flex; gap: 20px; align-items: center;">
+      <div class="login-links">
+        <a href="login.php">Student Login</a>
+        <a href="login.php">Lecturer Login</a>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container nav-container">
+    <a href="#" class="logo"><img src="https://arolait.com.ng/storage/images/1731350187.jpg" alt="Arolait Logo" onerror="this.src='https://placehold.co/400x120?text=AROLAIT+COLLEGE'"></a>
+    <button class="menu-toggle" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.php">Home</a></li>
+      <li><a href="about.php">About</a></li>
+      <li><a href="academics.php">Academics</a></li>
+      <li><a href="gallery.php">Our Gallery</a></li>
+      <li><a href="school_officials.php">School Officials</a></li>
+      <li><a href="#" class="active">Contact</a></li>
+      <li><a href="admissions.php">Admission</a></li>
+      <li><a href="login.php">Student Portal</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Page Banner -->
+<section class="page-banner">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <ul class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li>/</li>
+      <li>Contact Us</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section-sm">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- Contact Form -->
+      <div class="contact-form-box">
+        <h2>Get In Touch</h2>
+        <form id="contactForm" action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" placeholder="Your name" name="name" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" placeholder="Your phone" name="phone">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <input type="email" placeholder="Your email" name="email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Your subject" name="subject">
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your message..." name="message" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message <i class="fas fa-arrow-right"></i></button>
+        </form>
+        <div id="formMessage" style="margin-top: 20px; display: none;"></div>
+      </div>
+
+      <!-- Contact Information Cards -->
+      <div class="contact-info-box">
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+          <div class="info-content">
+            <h4>Call Us</h4>
+            <a href="tel:08060906911">08060906911</a>
+            <a href="tel:09035535827" style="display: block; margin-top: 4px;">09035535827</a>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-envelope"></i></div>
+          <div class="info-content">
+            <h4>Mail Us</h4>
+            <a href="mailto:arolaitglobalcollege@gmail.com">arolaitglobalcollege@gmail.com</a>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="info-content">
+            <h4>Location</h4>
+            <p>Owode-Ilaro Road, Owode Yewa, Ogun State, Nigeria</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="map-section">
+      <div class="map-placeholder">
+        <i class="fas fa-map-marker-alt" style="font-size: 2rem; margin-right: 8px;"></i> Owode-Ilaro Road, Owode Yewa
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <img src="https://arolait.com.ng/storage/images/1731350187.jpg" alt="logo" style="height: 70px; margin-bottom: 20px;">
+      <p>Arolait Global College of Health Technology, approved by NBTE, Ministry of Education, offers comprehensive health technology programs.</p>
+      <div class="social-icons" style="margin-top: 16px;">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div><h4>Academics</h4><ul style="list-style: none;"><li><a href="#">Faculties</a></li><li><a href="#">School Officials</a></li></ul></div>
+    <div><h4>Quick Links</h4><ul style="list-style: none;"><li><a href="#">Student Portal</a></li><li><a href="#">Check Admission</a></li><li><a href="#">Lecturer Portal</a></li><li><a href="#">How to Apply</a></li></ul></div>
+    <div><h4>Contact</h4><p><i class="fas fa-phone-alt"></i> 08060906911</p><p><i class="fas fa-envelope"></i> arolaitglobalcollege@gmail.com</p><p><i class="fas fa-map-marker-alt"></i> Owode-Ilaro Road, Owode Yewa, Ogun State.</p></div>
+  </div>
+  <div class="copyright">© 2026 Arolait Global College of Health Technology | All Rights Reserved</div>
+</footer>
+
+<!-- Floating Bank Details Button + Offcanvas -->
+<button class="floating-btn" id="bankDetailsBtn"><i class="fas fa-university"></i></button>
+<div class="offcanvas" id="bankOffcanvas">
+  <div class="offcanvas-header">
+    <h4>School Account Information</h4>
+    <button class="close-canvas" id="closeCanvasBtn">&times;</button>
+  </div>
+  <div>
+    <p><strong>Do not pay to any other accounts apart from the ones here.</strong></p>
+    <div class="account-detail">
+      <strong>Account One:</strong><br>
+      Account Number: 1024790910<br>
+      Bank: United Bank for Africa (UBA)<br>
+      Account Name: AROLAT GLOBAL COLLEGE OF HEALTH TECHNOLOGY
+    </div>
+    <div class="account-detail">
+      <strong>Account Two:</strong><br>
+      Account Number: 0272478282<br>
+      Bank: Wema<br>
+      Account Name: AROLAIT GLOBAL COLLEGE OF HEALTH TECHNOLOGY
+    </div>
+  </div>
+</div>
+
+<script>
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('mobileMenuBtn');
+  const navLinksEl = document.getElementById('navLinks');
+  if(menuBtn) {
+    menuBtn.addEventListener('click', () => {
+      navLinksEl.classList.toggle('show');
+    });
+  }
+
+  // Floating Offcanvas logic
+  const bankBtn = document.getElementById('bankDetailsBtn');
+  const offcanvasEl = document.getElementById('bankOffcanvas');
+  const closeCanvasBtn = document.getElementById('closeCanvasBtn');
+  function openOffcanvas() { offcanvasEl.classList.add('open'); }
+  function closeOffcanvas() { offcanvasEl.classList.remove('open'); }
+  if(bankBtn) bankBtn.addEventListener('click', openOffcanvas);
+  if(closeCanvasBtn) closeCanvasBtn.addEventListener('click', closeOffcanvas);
+  document.addEventListener('click', function(e) {
+    if(offcanvasEl.classList.contains('open') && !offcanvasEl.contains(e.target) && e.target !== bankBtn) {
+      closeOffcanvas();
+    }
+  });
+
+  // Simple form submission simulation (since backend not available)
+  const contactForm = document.getElementById('contactForm');
+  const formMessage = document.getElementById('formMessage');
+  if(contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const submitBtn = contactForm.querySelector('.submit-btn');
+      const originalText = submitBtn.innerHTML;
+      submitBtn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
+      submitBtn.disabled = true;
+      
+      // Simulate form submission
+      setTimeout(() => {
+        formMessage.style.display = 'block';
+        formMessage.innerHTML = '<div style="background: #dcfce7; color: #166534; padding: 14px; border-radius: 16px;"><i class="fas fa-check-circle"></i> Thank you for reaching out! We will get back to you shortly.</div>';
+        contactForm.reset();
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+        
+        // Hide message after 5 seconds
+        setTimeout(() => {
+          formMessage.style.display = 'none';
+          formMessage.innerHTML = '';
+        }, 5000);
+      }, 1000);
+    });
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Academics | Arolait Global College of Health Technology</title>
+  <!-- Google Fonts & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #1e2a3a;
+      scroll-behavior: smooth;
+      line-height: 1.5;
+    }
+
+    :root {
+      --primary: #915F07;
+      --primary-dark: #6e4505;
+      --secondary: #FFC333;
+      --secondary-light: #ffe2a4;
+      --dark: #0E0F10;
+      --gray-bg: #f9fafb;
+      --shadow-sm: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+      --shadow-md: 0 20px 25px -12px rgba(0, 0, 0, 0.08);
+      --transition: all 0.3s ease;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-sm {
+      padding: 60px 0;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 28px;
+      border-radius: 40px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: var(--transition);
+      border: none;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 4px 8px rgba(145, 95, 7, 0.2);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(145, 95, 7, 0.25);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+    }
+
+    .btn-outline:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+      color: #1f2937;
+    }
+
+    /* top bar */
+    .top-bar {
+      background: #fef7e6;
+      padding: 8px 0;
+      font-size: 0.85rem;
+      border-bottom: 1px solid #f0e5d2;
+    }
+
+    .top-bar .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .contact-info a {
+      text-decoration: none;
+      color: #2c3e2f;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+    }
+
+    .social-icons a {
+      color: #5b3c1a;
+      margin-left: 18px;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+
+    .social-icons a:hover {
+      color: var(--primary);
+    }
+
+    .login-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .login-links a {
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--primary);
+      font-size: 0.85rem;
+    }
+
+    /* navbar */
+    .navbar {
+      background: white;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03), 0 1px 6px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 12px 0;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      height: 70px;
+      object-fit: contain;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #1f2d3a;
+      transition: 0.2s;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover, .nav-links a.active {
+      color: var(--primary);
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--primary);
+    }
+
+    /* page banner */
+    .page-banner {
+      background: linear-gradient(105deg, #fef9ef 0%, #fff6e8 100%);
+      padding: 60px 0;
+    }
+
+    .page-banner h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: #143052;
+      margin-bottom: 12px;
+    }
+
+    .breadcrumb {
+      display: flex;
+      gap: 12px;
+      list-style: none;
+      color: #5b6e8c;
+    }
+
+    .breadcrumb a {
+      text-decoration: none;
+      color: var(--primary);
+    }
+
+    /* header with apply button */
+    .academics-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 48px;
+    }
+
+    /* faculty cards */
+    .faculties-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+      margin-top: 20px;
+    }
+
+    .faculty-card {
+      background: white;
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      border: 1px solid #f0ede8;
+    }
+
+    .faculty-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      border-bottom: 2px solid var(--secondary-light);
+      padding-bottom: 16px;
+    }
+
+    .card-icon {
+      font-size: 2.2rem;
+      color: var(--primary);
+    }
+
+    .card-number {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #e2e8f0;
+    }
+
+    .faculty-card h3 {
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+      color: #1f2937;
+    }
+
+    .faculty-card p {
+      color: #4b5563;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .learn-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 8px;
+    }
+
+    .learn-more:hover {
+      gap: 12px;
+    }
+
+    /* footer */
+    .footer {
+      background: #11181c;
+      color: #cdd9e6;
+      padding: 60px 0 30px;
+      margin-top: 60px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+    }
+
+    .footer a {
+      color: #e2e8f0;
+      text-decoration: none;
+    }
+
+    .footer h4 {
+      color: white;
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 40px;
+      font-size: 0.85rem;
+      border-top: 1px solid #2d3a40;
+      margin-top: 40px;
+    }
+
+    /* floating button + offcanvas */
+    .floating-btn {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      background: var(--primary);
+      border: none;
+      width: 55px;
+      height: 55px;
+      border-radius: 60px;
+      color: white;
+      font-size: 1.6rem;
+      cursor: pointer;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+      z-index: 99;
+      transition: 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .offcanvas {
+      position: fixed;
+      bottom: 0;
+      left: -100%;
+      width: 90%;
+      max-width: 400px;
+      background: white;
+      border-radius: 28px 28px 0 0;
+      transition: 0.3s ease-in-out;
+      z-index: 1000;
+      padding: 28px;
+      box-shadow: 0 -10px 30px rgba(0,0,0,0.15);
+    }
+
+    .offcanvas.open {
+      left: 0;
+    }
+
+    .offcanvas-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .close-canvas {
+      background: none;
+      border: none;
+      font-size: 1.6rem;
+      cursor: pointer;
+    }
+
+    .account-detail {
+      background: #f8f9fa;
+      padding: 16px;
+      border-radius: 20px;
+      margin-top: 12px;
+    }
+
+    /* responsiveness */
+    @media (max-width: 992px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        padding: 20px 0;
+        gap: 18px;
+      }
+      .nav-links.show {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .section-title {
+        font-size: 1.9rem;
+      }
+      .page-banner h1 {
+        font-size: 2.2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .top-bar .container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .academics-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+      .faculties-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="container">
+    <div class="contact-info">
+      <a href="tel:08060906911"><i class="fas fa-phone-alt"></i> 08060906911</a>
+      <a href="mailto:arolaitglobalcollege@gmail.com"><i class="fas fa-envelope"></i> arolaitglobalcollege@gmail.com</a>
+    </div>
+    <div style="display: flex; gap: 20px; align-items: center;">
+      <div class="login-links">
+        <a href="login.php">Student Login</a>
+        <a href="login.php">Lecturer Login</a>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container nav-container">
+    <a href="#" class="logo"><img src="https://arolait.com.ng/storage/images/1731350187.jpg" alt="Arolait Logo" onerror="this.src='https://placehold.co/400x120?text=AROLAIT+COLLEGE'"></a>
+    <button class="menu-toggle" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.php">Home</a></li>
+      <li><a href="about.php">About</a></li>
+      <li><a href="#" class="active">Academics</a></li>
+      <li><a href="gallery.php">Our Gallery</a></li>
+      <li><a href="school_officials.php">School Officials</a></li>
+      <li><a href="contact.php">Contact</a></li>
+      <li><a href="admissions.php">Admission</a></li>
+      <li><a href="login.php">Student Portal</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Page Banner -->
+<section class="page-banner">
+  <div class="container">
+    <h1>Academics</h1>
+    <ul class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li>/</li>
+      <li>Academics</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Academics Section -->
+<section class="section-sm">
+  <div class="container">
+    <div class="academics-header">
+      <h2 class="section-title" style="margin-bottom: 0;">Our Academic Programs</h2>
+      <a href="#" class="btn btn-primary">Apply Now <i class="fas fa-arrow-right"></i></a>
+    </div>
+
+    <div class="faculties-grid">
+      <!-- Public Health Card -->
+      <div class="faculty-card">
+        <div class="card-header">
+          <div class="card-icon"><i class="fas fa-globe-americas"></i></div>
+          <div class="card-number">01</div>
+        </div>
+        <h3>Public Health</h3>
+        <p><strong>Public Health</strong> is the science and practice of promoting and protecting the health and well-being of populations through education, research, policy-making, and community-based efforts. Unlike clinical healthcare, which focuses on treating individuals, public health aims to prevent diseases, prolong life, and improve the quality of life for entire communities.</p>
+        <p>Public health professionals work on a wide range of issues, including disease prevention, health education, epidemiology, environmental health, and health policy.</p>
+        <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Additional Faculty Placeholder (can be expanded) -->
+      <div class="faculty-card">
+        <div class="card-header">
+          <div class="card-icon"><i class="fas fa-microscope"></i></div>
+          <div class="card-number">02</div>
+        </div>
+        <h3>Medical Laboratory Science</h3>
+        <p><strong>Medical Laboratory Science</strong> prepares students to perform complex diagnostic tests that help detect, diagnose, and treat diseases. Our state-of-the-art labs and experienced faculty ensure hands-on training in hematology, microbiology, clinical chemistry, and immunology.</p>
+        <p>Graduates are equipped to work in hospitals, research labs, and public health facilities, playing a vital role in patient care.</p>
+        <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="faculty-card">
+        <div class="card-header">
+          <div class="card-icon"><i class="fas fa-laptop-medical"></i></div>
+          <div class="card-number">03</div>
+        </div>
+        <h3>Health Information Management</h3>
+        <p><strong>Health Information Management</strong> combines healthcare, technology, and business administration. Students learn to manage patient data, medical records, and health information systems while ensuring compliance with legal and ethical standards.</p>
+        <p>This program leads to careers in hospitals, insurance companies, and healthcare consulting.</p>
+        <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="faculty-card">
+        <div class="card-header">
+          <div class="card-icon"><i class="fas fa-baby-carriage"></i></div>
+          <div class="card-number">04</div>
+        </div>
+        <h3>Community Health Extension</h3>
+        <p><strong>Community Health Extension</strong> focuses on delivering primary healthcare services to rural and underserved communities. Students gain skills in health promotion, disease prevention, maternal and child health, and basic clinical procedures.</p>
+        <p>Graduates become frontline healthcare providers and community change-makers.</p>
+        <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="faculty-card">
+        <div class="card-header">
+          <div class="card-icon"><i class="fas fa-tooth"></i></div>
+          <div class="card-number">05</div>
+        </div>
+        <h3>Dental Health Technology</h3>
+        <p><strong>Dental Health Technology</strong> trains students in oral hygiene, dental assisting, and preventive dental care. The curriculum includes both theoretical knowledge and clinical practice in modern dental facilities.</p>
+        <p>Graduates are prepared to work in dental clinics, hospitals, and public health programs.</p>
+        <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="faculty-card">
+        <div class="card-header">
+          <div class="card-icon"><i class="fas fa-capsules"></i></div>
+          <div class="card-number">06</div>
+        </div>
+        <h3>Pharmacy Technology</h3>
+        <p><strong>Pharmacy Technology</strong> provides students with the skills needed to assist pharmacists in dispensing medications, managing inventory, and providing patient education. The program emphasizes accuracy, ethics, and pharmaceutical best practices.</p>
+        <p>Graduates can work in retail pharmacies, hospital pharmacies, and pharmaceutical companies.</p>
+        <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <img src="https://arolait.com.ng/storage/images/1731350187.jpg" alt="logo" style="height: 70px; margin-bottom: 20px;">
+      <p>Arolait Global College of Health Technology, approved by NBTE, Ministry of Education, offers comprehensive health technology programs.</p>
+      <div class="social-icons" style="margin-top: 16px;">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div><h4>Academics</h4><ul style="list-style: none;"><li><a href="#">Faculties</a></li><li><a href="#">School Officials</a></li></ul></div>
+    <div><h4>Quick Links</h4><ul style="list-style: none;"><li><a href="#">Student Portal</a></li><li><a href="#">Check Admission</a></li><li><a href="#">Lecturer Portal</a></li><li><a href="#">How to Apply</a></li></ul></div>
+    <div><h4>Contact</h4><p><i class="fas fa-phone-alt"></i> 08060906911</p><p><i class="fas fa-envelope"></i> arolaitglobalcollege@gmail.com</p><p><i class="fas fa-map-marker-alt"></i> Owode-Ilaro Road, Owode Yewa, Ogun State.</p></div>
+  </div>
+  <div class="copyright">© 2026 Arolait Global College of Health Technology | All Rights Reserved</div>
+</footer>
+
+<!-- Floating Bank Details Button + Offcanvas -->
+<button class="floating-btn" id="bankDetailsBtn"><i class="fas fa-university"></i></button>
+<div class="offcanvas" id="bankOffcanvas">
+  <div class="offcanvas-header">
+    <h4>School Account Information</h4>
+    <button class="close-canvas" id="closeCanvasBtn">&times;</button>
+  </div>
+  <div>
+    <p><strong>Do not pay to any other accounts apart from the ones here.</strong></p>
+    <div class="account-detail">
+      <strong>Account One:</strong><br>
+      Account Number: 1024790910<br>
+      Bank: United Bank for Africa (UBA)<br>
+      Account Name: AROLAT GLOBAL COLLEGE OF HEALTH TECHNOLOGY
+    </div>
+    <div class="account-detail">
+      <strong>Account Two:</strong><br>
+      Account Number: 0272478282<br>
+      Bank: Wema<br>
+      Account Name: AROLAIT GLOBAL COLLEGE OF HEALTH TECHNOLOGY
+    </div>
+  </div>
+</div>
+
+<script>
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('mobileMenuBtn');
+  const navLinksEl = document.getElementById('navLinks');
+  if(menuBtn) {
+    menuBtn.addEventListener('click', () => {
+      navLinksEl.classList.toggle('show');
+    });
+  }
+
+  // Floating Offcanvas logic
+  const bankBtn = document.getElementById('bankDetailsBtn');
+  const offcanvasEl = document.getElementById('bankOffcanvas');
+  const closeCanvasBtn = document.getElementById('closeCanvasBtn');
+  function openOffcanvas() { offcanvasEl.classList.add('open'); }
+  function closeOffcanvas() { offcanvasEl.classList.remove('open'); }
+  if(bankBtn) bankBtn.addEventListener('click', openOffcanvas);
+  if(closeCanvasBtn) closeCanvasBtn.addEventListener('click', closeOffcanvas);
+  document.addEventListener('click', function(e) {
+    if(offcanvasEl.classList.contains('open') && !offcanvasEl.contains(e.target) && e.target !== bankBtn) {
+      closeOffcanvas();
+    }
+  });
+</script>
+</body>
+</html>

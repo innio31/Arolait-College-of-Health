@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>School Gallery | Arolait Global College of Health Technology</title>
+  <!-- Google Fonts & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Fancybox Lightbox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #1e2a3a;
+      scroll-behavior: smooth;
+      line-height: 1.5;
+    }
+
+    :root {
+      --primary: #915F07;
+      --primary-dark: #6e4505;
+      --secondary: #FFC333;
+      --secondary-light: #ffe2a4;
+      --dark: #0E0F10;
+      --gray-bg: #f9fafb;
+      --shadow-sm: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+      --shadow-md: 0 20px 25px -12px rgba(0, 0, 0, 0.08);
+      --transition: all 0.3s ease;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-sm {
+      padding: 60px 0;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 28px;
+      border-radius: 40px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: var(--transition);
+      border: none;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 4px 8px rgba(145, 95, 7, 0.2);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(145, 95, 7, 0.25);
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+      color: #1f2937;
+    }
+
+    /* top bar */
+    .top-bar {
+      background: #fef7e6;
+      padding: 8px 0;
+      font-size: 0.85rem;
+      border-bottom: 1px solid #f0e5d2;
+    }
+
+    .top-bar .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .contact-info a {
+      text-decoration: none;
+      color: #2c3e2f;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+    }
+
+    .social-icons a {
+      color: #5b3c1a;
+      margin-left: 18px;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+
+    .social-icons a:hover {
+      color: var(--primary);
+    }
+
+    .login-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .login-links a {
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--primary);
+      font-size: 0.85rem;
+    }
+
+    /* navbar */
+    .navbar {
+      background: white;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03), 0 1px 6px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 12px 0;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      height: 70px;
+      object-fit: contain;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #1f2d3a;
+      transition: 0.2s;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover, .nav-links a.active {
+      color: var(--primary);
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--primary);
+    }
+
+    /* page banner */
+    .page-banner {
+      background: linear-gradient(105deg, #fef9ef 0%, #fff6e8 100%);
+      padding: 60px 0;
+    }
+
+    .page-banner h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: #143052;
+      margin-bottom: 12px;
+    }
+
+    .breadcrumb {
+      display: flex;
+      gap: 12px;
+      list-style: none;
+      color: #5b6e8c;
+    }
+
+    .breadcrumb a {
+      text-decoration: none;
+      color: var(--primary);
+    }
+
+    /* gallery description */
+    .gallery-description {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 50px auto;
+      color: #4b5563;
+      font-size: 1.1rem;
+    }
+
+    /* gallery grid */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 28px;
+      margin-top: 20px;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      cursor: pointer;
+      aspect-ratio: 4 / 3;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+      padding: 20px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    .gallery-overlay i {
+      color: white;
+      font-size: 1.8rem;
+      background: rgba(145, 95, 7, 0.8);
+      padding: 10px;
+      border-radius: 50%;
+    }
+
+    /* footer */
+    .footer {
+      background: #11181c;
+      color: #cdd9e6;
+      padding: 60px 0 30px;
+      margin-top: 60px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+    }
+
+    .footer a {
+      color: #e2e8f0;
+      text-decoration: none;
+    }
+
+    .footer h4 {
+      color: white;
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 40px;
+      font-size: 0.85rem;
+      border-top: 1px solid #2d3a40;
+      margin-top: 40px;
+    }
+
+    /* floating button + offcanvas */
+    .floating-btn {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      background: var(--primary);
+      border: none;
+      width: 55px;
+      height: 55px;
+      border-radius: 60px;
+      color: white;
+      font-size: 1.6rem;
+      cursor: pointer;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+      z-index: 99;
+      transition: 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .offcanvas {
+      position: fixed;
+      bottom: 0;
+      left: -100%;
+      width: 90%;
+      max-width: 400px;
+      background: white;
+      border-radius: 28px 28px 0 0;
+      transition: 0.3s ease-in-out;
+      z-index: 1000;
+      padding: 28px;
+      box-shadow: 0 -10px 30px rgba(0,0,0,0.15);
+    }
+
+    .offcanvas.open {
+      left: 0;
+    }
+
+    .offcanvas-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .close-canvas {
+      background: none;
+      border: none;
+      font-size: 1.6rem;
+      cursor: pointer;
+    }
+
+    .account-detail {
+      background: #f8f9fa;
+      padding: 16px;
+      border-radius: 20px;
+      margin-top: 12px;
+    }
+
+    /* responsiveness */
+    @media (max-width: 992px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        padding: 20px 0;
+        gap: 18px;
+      }
+      .nav-links.show {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .section-title {
+        font-size: 1.9rem;
+      }
+      .page-banner h1 {
+        font-size: 2.2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .top-bar .container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="container">
+    <div class="contact-info">
+      <a href="tel:08060906911"><i class="fas fa-phone-alt"></i> 08060906911</a>
+      <a href="mailto:arolaitglobalcollege@gmail.com"><i class="fas fa-envelope"></i> arolaitglobalcollege@gmail.com</a>
+    </div>
+    <div style="display: flex; gap: 20px; align-items: center;">
+      <div class="login-links">
+        <a href="login.php">Student Login</a>
+        <a href="login.php">Lecturer Login</a>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container nav-container">
+    <a href="#" class="logo"><img src="https://arolait.com.ng/storage/images/1731350187.jpg" alt="Arolait Logo" onerror="this.src='https://placehold.co/400x120?text=AROLAIT+COLLEGE'"></a>
+    <button class="menu-toggle" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.php">Home</a></li>
+      <li><a href="about.php">About</a></li>
+      <li><a href="academics.php">Academics</a></li>
+      <li><a href="#" class="active">Our Gallery</a></li>
+      <li><a href="school_officials.php">School Officials</a></li>
+      <li><a href="contact.php">Contact</a></li>
+      <li><a href="admissions.php">Admission</a></li>
+      <li><a href="login.php">Student Portal</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Page Banner -->
+<section class="page-banner">
+  <div class="container">
+    <h1>School Gallery</h1>
+    <ul class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li>/</li>
+      <li>School Gallery</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="section-sm">
+  <div class="container">
+    <div class="gallery-description">
+      <p>Explore a visual journey through the unforgettable moments and experiences that embody the lively spirit and community of our institution.</p>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- Gallery images will be populated here -->
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <img src="https://arolait.com.ng/storage/images/1731350187.jpg" alt="logo" style="height: 70px; margin-bottom: 20px;">
+      <p>Arolait Global College of Health Technology, approved by NBTE, Ministry of Education, offers comprehensive health technology programs.</p>
+      <div class="social-icons" style="margin-top: 16px;">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div><h4>Academics</h4><ul style="list-style: none;"><li><a href="#">Faculties</a></li><li><a href="#">School Officials</a></li></ul></div>
+    <div><h4>Quick Links</h4><ul style="list-style: none;"><li><a href="#">Student Portal</a></li><li><a href="#">Check Admission</a></li><li><a href="#">Lecturer Portal</a></li><li><a href="#">How to Apply</a></li></ul></div>
+    <div><h4>Contact</h4><p><i class="fas fa-phone-alt"></i> 08060906911</p><p><i class="fas fa-envelope"></i> arolaitglobalcollege@gmail.com</p><p><i class="fas fa-map-marker-alt"></i> Owode-Ilaro Road, Owode Yewa, Ogun State.</p></div>
+  </div>
+  <div class="copyright">© 2026 Arolait Global College of Health Technology | All Rights Reserved</div>
+</footer>
+
+<!-- Floating Bank Details Button + Offcanvas -->
+<button class="floating-btn" id="bankDetailsBtn"><i class="fas fa-university"></i></button>
+<div class="offcanvas" id="bankOffcanvas">
+  <div class="offcanvas-header">
+    <h4>School Account Information</h4>
+    <button class="close-canvas" id="closeCanvasBtn">&times;</button>
+  </div>
+  <div>
+    <p><strong>Do not pay to any other accounts apart from the ones here.</strong></p>
+    <div class="account-detail">
+      <strong>Account One:</strong><br>
+      Account Number: 1024790910<br>
+      Bank: United Bank for Africa (UBA)<br>
+      Account Name: AROLAT GLOBAL COLLEGE OF HEALTH TECHNOLOGY
+    </div>
+    <div class="account-detail">
+      <strong>Account Two:</strong><br>
+      Account Number: 0272478282<br>
+      Bank: Wema<br>
+      Account Name: AROLAIT GLOBAL COLLEGE OF HEALTH TECHNOLOGY
+    </div>
+  </div>
+</div>
+
+<!-- Fancybox & Gallery Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script>
+  // Gallery images data (from original file)
+  const galleryImages = [
+    "https://arolait.com.ng/storage/images/1731345695.jpg",
+    "https://arolait.com.ng/storage/images/1731345723.jpg",
+    "https://arolait.com.ng/storage/images/1731345757.jpg",
+    "https://arolait.com.ng/storage/images/1731345801.jpg",
+    "https://arolait.com.ng/storage/images/1731345826.jpg",
+    "https://arolait.com.ng/storage/images/1731345863.jpg",
+    "https://arolait.com.ng/storage/images/1731345906.jpg",
+    "https://arolait.com.ng/storage/images/1731346271.jpg",
+    "https://arolait.com.ng/storage/images/1731346330.jpg",
+    "https://arolait.com.ng/storage/images/1731346358.jpg",
+    "https://arolait.com.ng/storage/images/1731346397.jpg",
+    "https://arolait.com.ng/storage/images/1731346418.jpg"
+  ];
+
+  // Generate thumbnail URLs (using same image with ?thumb param or just original)
+  function getThumbUrl(imgUrl) {
+    // If the server has thumbnails, we could use pattern; fallback to original
+    // Original had thumb_ prefix pattern, we'll attempt to construct
+    const parts = imgUrl.split('/');
+    const filename = parts[parts.length - 1];
+    // For the original, they used thumb_ prefix for thumbs
+    const thumbUrl = imgUrl.replace(filename, 'thumb_' + filename);
+    return thumbUrl;
+  }
+
+  // Render gallery
+  const galleryGrid = document.getElementById('galleryGrid');
+  if (galleryGrid) {
+    galleryImages.forEach((imgUrl, index) => {
+      const thumbUrl = getThumbUrl(imgUrl);
+      const galleryItem = document.createElement('div');
+      galleryItem.className = 'gallery-item';
+      galleryItem.setAttribute('data-fancybox', 'gallery');
+      galleryItem.setAttribute('data-src', imgUrl);
+      galleryItem.innerHTML = `
+        <img src="${thumbUrl}" alt="Gallery image ${index + 1}" onerror="this.src='${imgUrl}'">
+        <div class="gallery-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+      `;
+      galleryItem.addEventListener('click', (e) => {
+        e.preventDefault();
+        Fancybox.show(galleryImages, {
+          startIndex: index,
+          infinite: true,
+          Thumbs: { showOnStart: false }
+        });
+      });
+      galleryGrid.appendChild(galleryItem);
+    });
+  }
+
+  // Initialize Fancybox for dynamic items
+  Fancybox.bind('[data-fancybox="gallery"]', {
+    Carousel: { transition: "slide" },
+    Images: { zoom: true },
+  });
+
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('mobileMenuBtn');
+  const navLinksEl = document.getElementById('navLinks');
+  if(menuBtn) {
+    menuBtn.addEventListener('click', () => {
+      navLinksEl.classList.toggle('show');
+    });
+  }
+
+  // Floating Offcanvas logic
+  const bankBtn = document.getElementById('bankDetailsBtn');
+  const offcanvasEl = document.getElementById('bankOffcanvas');
+  const closeCanvasBtn = document.getElementById('closeCanvasBtn');
+  function openOffcanvas() { offcanvasEl.classList.add('open'); }
+  function closeOffcanvas() { offcanvasEl.classList.remove('open'); }
+  if(bankBtn) bankBtn.addEventListener('click', openOffcanvas);
+  if(closeCanvasBtn) closeCanvasBtn.addEventListener('click', closeOffcanvas);
+  document.addEventListener('click', function(e) {
+    if(offcanvasEl.classList.contains('open') && !offcanvasEl.contains(e.target) && e.target !== bankBtn) {
+      closeOffcanvas();
+    }
+  });
+</script>
+</body>
+</html>
